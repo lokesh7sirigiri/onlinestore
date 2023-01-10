@@ -1,0 +1,27 @@
+{
+  "onlinestoreApp": {
+    "shipment": {
+      "home": {
+        "title": "Shipments",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "కొత్త Shipment  సృష్టించండి",
+        "createOrEditLabel": "Shipment సృష్టించండి లేదా సవరించండి",
+        "notFound": "No Shipments found"
+      },
+      "created": "{{ param }} ఐడీ తో ఒక కొత్త Shipment సృష్టించబడినది",
+      "updated": "{{ param }} ఐడీ తో ఒక కొత్త Shipment సవరించబడినది",
+      "deleted": "{{ param }} ఐడీ తో ఒక కొత్త Shipment తొలగించబడినది",
+      "delete": {
+        "question": "మీరు Shipment {{ id }} ఖచ్చితంగా తొలగించాలనుకుంటున్నారా?"
+      },
+      "detail": {
+        "title": "Shipment"
+      },
+      "id": "ID",
+      "trackingCode": "Tracking Code",
+      "date": "Date",
+      "details": "Details",
+      "invoice": "Invoice"
+    }
+  }
+}

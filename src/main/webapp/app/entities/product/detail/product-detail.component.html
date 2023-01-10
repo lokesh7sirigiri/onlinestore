@@ -1,0 +1,65 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="product">
+      <h2 data-cy="productDetailsHeading"><span jhiTranslate="onlinestoreApp.product.detail.title">Product</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ product.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="onlinestoreApp.product.name">Name</span></dt>
+        <dd>
+          <span>{{ product.name }}</span>
+        </dd>
+        <dt><span jhiTranslate="onlinestoreApp.product.description">Description</span></dt>
+        <dd>
+          <span>{{ product.description }}</span>
+        </dd>
+        <dt><span jhiTranslate="onlinestoreApp.product.price">Price</span></dt>
+        <dd>
+          <span>{{ product.price }}</span>
+        </dd>
+        <dt><span jhiTranslate="onlinestoreApp.product.length">Length</span></dt>
+        <dd>
+          <span jhiTranslate="{{ 'onlinestoreApp.Size.' + product.length }}">{{ product.length }}</span>
+        </dd>
+        <dt><span jhiTranslate="onlinestoreApp.product.image">Image</span></dt>
+        <dd>
+          <div *ngIf="product.image">
+            <a (click)="openFile(product.image, product.imageContentType)">
+              <img [src]="'data:' + product.imageContentType + ';base64,' + product.image" style="max-width: 100%" alt="product image" />
+            </a>
+            {{ product.imageContentType }}, {{ byteSize(product.image) }}
+          </div>
+        </dd>
+        <dt><span jhiTranslate="onlinestoreApp.product.orderItem">Order Item</span></dt>
+        <dd>
+          <div *ngIf="product.orderItem">
+            <a [routerLink]="['/order-item', product.orderItem.id, 'view']">{{ product.orderItem.id }}</a>
+          </div>
+        </dd>
+        <dt><span jhiTranslate="onlinestoreApp.product.productCategory">Product Category</span></dt>
+        <dd>
+          <div *ngIf="product.productCategory">
+            <a [routerLink]="['/product-category', product.productCategory.id, 'view']">{{ product.productCategory.id }}</a>
+          </div>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/product', product.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+      </button>
+    </div>
+  </div>
+</div>

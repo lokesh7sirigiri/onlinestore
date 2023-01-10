@@ -1,0 +1,26 @@
+{
+  "onlinestoreApp": {
+    "productCategory": {
+      "home": {
+        "title": "Product Categories",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "కొత్త Product Category  సృష్టించండి",
+        "createOrEditLabel": "Product Category సృష్టించండి లేదా సవరించండి",
+        "notFound": "No Product Categories found"
+      },
+      "created": "{{ param }} ఐడీ తో ఒక కొత్త Product Category సృష్టించబడినది",
+      "updated": "{{ param }} ఐడీ తో ఒక కొత్త Product Category సవరించబడినది",
+      "deleted": "{{ param }} ఐడీ తో ఒక కొత్త Product Category తొలగించబడినది",
+      "delete": {
+        "question": "మీరు Product Category {{ id }} ఖచ్చితంగా తొలగించాలనుకుంటున్నారా?"
+      },
+      "detail": {
+        "title": "Product Category"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description",
+      "product": "Product"
+    }
+  }
+}

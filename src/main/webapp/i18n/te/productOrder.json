@@ -1,0 +1,29 @@
+{
+  "onlinestoreApp": {
+    "productOrder": {
+      "home": {
+        "title": "Product Orders",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "కొత్త Product Order  సృష్టించండి",
+        "createOrEditLabel": "Product Order సృష్టించండి లేదా సవరించండి",
+        "notFound": "No Product Orders found"
+      },
+      "created": "{{ param }} ఐడీ తో ఒక కొత్త Product Order సృష్టించబడినది",
+      "updated": "{{ param }} ఐడీ తో ఒక కొత్త Product Order సవరించబడినది",
+      "deleted": "{{ param }} ఐడీ తో ఒక కొత్త Product Order తొలగించబడినది",
+      "delete": {
+        "question": "మీరు Product Order {{ id }} ఖచ్చితంగా తొలగించాలనుకుంటున్నారా?"
+      },
+      "detail": {
+        "title": "Product Order"
+      },
+      "id": "ID",
+      "placedDate": "Placed Date",
+      "status": "Status",
+      "code": "Code",
+      "orderItem": "Order Item",
+      "invoice": "Invoice",
+      "customer": "Customer"
+    }
+  }
+}

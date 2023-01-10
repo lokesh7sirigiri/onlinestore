@@ -1,0 +1,10 @@
+{
+  "onlinestoreApp": {
+    "Gender": {
+      "null": "",
+      "MALE": "MALE",
+      "FEMALE": "FEMALE",
+      "OTHER": "OTHER"
+    }
+  }
+}
